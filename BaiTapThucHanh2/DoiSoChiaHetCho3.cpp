@@ -8,12 +8,12 @@ int main() {
     string largestNumber = inputNumber;
     int digitSum = 0;
 
-    // Tính tổng các chữ số của inputNumber
+ 
     for (char digit : inputNumber) {
         digitSum += digit - '0';
     }
 
-    // Thử thay thế từng chữ số
+
     for (int i = 0; i < inputNumber.length(); ++i) {
         char originalDigit = inputNumber[i];
         for (char newDigit = '0'; newDigit <= '9'; ++newDigit) {
